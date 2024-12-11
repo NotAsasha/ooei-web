@@ -1,37 +1,89 @@
-body {
-    padding: 0%;
-    margin: 0%;
-    background-color: #C0E9EA;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
+
+body {
+    background-color: #C0E9EA;
+    font-family: "din", -apple-system, system, sans-serif;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-left: #4b423c solid;
+    border-right: #4b423c solid;
+    border-radius: 1px;
+    /* overflow-x:hidden;  --- Класний дизайн, але багато проблем*/
+}
+
+.navTab {
+    background-color:aliceblue;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px 100px;
+    z-index: 1;
+
+    border-bottom: #4b423c solid;
+    border-radius: 1px;
+}
+
+.navTab .logo {
+    color: #4b423c;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+.navTab ul {
+    position: relative;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.navTab ul li {
+    list-style: none;
+}
+
+.navTab ul li a {
+    text-decoration: none;
+    color: #4b423c;
+}
+
 .Background {
     position: relative;
-    overflow: hidden;
-    height: 1000px;
-text-align: center;
-    display: flex;
-      justify-content: center;
-}
-.navTab {
-    background-color: blueviolet;
-    display: flex;
-    justify-content: space-around;
+    height: 1700px;
+    width: 100%;
     text-align: center;
-    width:100%;
+    display: flex;
+    justify-content: center;
+    overflow:hidden;
+}
+#svgText {
+
+    width: 50%;
+    
 }
 .tabIcon {
-    width:20%;
+    width: 20%;
 }
-.tabButtons {
-    width:80%;
-    display: flex;
-    justify-content: right;
-}
-img { 
+
+img {
     position: absolute;
 }
+
 svg path {
     fill: transparent;
-    stroke: blue;
+    stroke: hsl(124, 46%, 42%);
+    stroke-width: 1;
+    stroke-dasharray: 110;
+    stroke-dashoffset: 0;
+
+}
+main {
+    position: relative;
 }
 .land {
     background-color: #22B14C;
