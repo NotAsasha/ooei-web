@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    color: #4b423c;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     border-left: #4b423c solid;
     border-right: #4b423c solid;
     border-radius: 1px;
-    
+
     /* overflow-x:hidden;  --- Класний дизайн, але багато проблем*/
 }
 
@@ -27,15 +28,89 @@ main {
     height: 3000px;
 }
 
+.land h1 {
+    text-align: center;
+    font-size: 8vw;
+}
+
+.land h2 {
+    text-align: center;
+}
+
+.land h3 {
+    text-align: center;
+}
+
+.showOut {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    align-items: center;
+    overflow: hidden;
+    flex-flow: row wrap;
+}
+
+.showOut div {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    position: relative;
+    width: 500px;
+    height: auto;
+    font-size: x-large;
+
+}
+
+.imageInBox {
+    position: relative;
+    border: #4b423c 5px solid;
+    border-radius: 5px;
+    width: 500px;
+}
+
+.hoverImageInBox h2 a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 0%;
+    z-index: 1;
+    
+}
+
+.hoverImageInBox:hover img {
+    transition: 0.5s ease-in-out;
+    filter: blur(3px) brightness(40%);
+    background-color: black;
+}
+
+.hoverImageInBox:hover h2 a{
+    transition: 0.5s ease-in-out;
+    opacity: 100%;
+}
+
+hr {
+    border: 1px solid #4b423c;
+}
+
+.projList {
+    margin-top: 100px;
+}
+
 .gallery {
+    margin-top: 500px;
     display: flex;
     justify-content: center;
 
 }
+
 .gallery .border {
     width: 100%;
     z-index: 1;
 }
+
 .gallery img {
     width: 80%;
 }
