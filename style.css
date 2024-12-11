@@ -114,3 +114,101 @@ hr {
 .gallery img {
     width: 80%;
 }
+
+
+.navTab {
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 700;
+    width: 100%;
+    padding: 20px 3%;
+    z-index: 1;
+    overflow: hidden;
+    border-bottom: #4b423c solid;
+    border-radius: 1px;
+}
+
+.navTab .logo {
+    color: #4b423c;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    .navTab {
+        flex-direction: column;
+        /* Stack items vertically */
+        padding: 10px 5%;
+        /* Reduce padding */
+    }
+
+    .navTab .logo {
+        font-size: 1.5em;
+        /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .navTab {
+        padding: 10px 5%;
+        /* Further reduce padding */
+    }
+
+    .navTab .logo {
+        font-size: 1.2em;
+        /* Further reduce font size */
+    }
+}
+
+.navTab ul {
+    position: relative;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.navTab ul li {
+    list-style: none;
+}
+
+.navTab ul li a {
+    text-decoration: none;
+    color: #4b423c;
+}
+
+
+
+.Background {
+    position: relative;
+    height: 1700px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#svgText {
+
+    width: 50%;
+
+}
+
+.tabIcon {
+    width: 20%;
+}
+
+img {
+    position: absolute;
+}
+
+svg path {
+    fill: transparent;
+    stroke: hsl(124, 46%, 42%);
+    stroke-width: 1;
+    stroke-dasharray: 110;
+    stroke-dashoffset: 0;
+
+}
