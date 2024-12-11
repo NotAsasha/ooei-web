@@ -14,4 +14,5 @@ window.addEventListener('scroll', function() {
     svgText.style.marginTop = value + 'px';
     svgText.style.width = 50 - value / 30 + '%';
     svgPath.style.strokeDashoffset = value / 6;
+    
 })
