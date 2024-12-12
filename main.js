@@ -2,20 +2,20 @@ img5.style.right = 0;
 let swipes = 3000;
 document.getElementById("clickMe").onclick = function () {
     if (swipes < 6000) {
-    swipes += 3000;
-    document.getElementById("gal1").style.marginLeft = swipes - 6000 + 'px';
-    document.getElementById("gal2").style.marginLeft = swipes - 3000 + 'px';
-    document.getElementById("gal3").style.marginLeft = swipes + 'px';
-    console.log(swipes);
+        swipes += 3000;
+        document.getElementById("gal1").style.marginLeft = swipes - 6000 + 'px';
+        document.getElementById("gal2").style.marginLeft = swipes - 3000 + 'px';
+        document.getElementById("gal3").style.marginLeft = swipes + 'px';
+        console.log(swipes);
     }
 };
 document.getElementById("clickMe2").onclick = function () {
     if (swipes > 0) {
-    swipes -= 3000;
-    document.getElementById("gal1").style.marginLeft = swipes - 6000 + 'px';
-    document.getElementById("gal2").style.marginLeft = swipes - 3000 + 'px';
-    document.getElementById("gal3").style.marginLeft = swipes + 'px';
-    console.log(swipes);
+        swipes -= 3000;
+        document.getElementById("gal1").style.marginLeft = swipes - 6000 + 'px';
+        document.getElementById("gal2").style.marginLeft = swipes - 3000 + 'px';
+        document.getElementById("gal3").style.marginLeft = swipes + 'px';
+        console.log(swipes);
     }
 };
 window.addEventListener('scroll', function () {

@@ -20,12 +20,42 @@
         </div>
     </header>
     <main>
-        <div class="land">
+        <div id="notaLand" class="land secLand">
             <div>
-                <h2>We are always happy to hire new people!</h2>
+                <h2 style="padding-top: 120px;">We are always happy to hire new people!</h2>
+                <div class="applyBox">
+                    <form method="POST" action="https://">
+                        <h2>Contact Us</h2>
+                        <div>
+                            <h3>Name: </h3>
+                            <input type="text" name="name" placeholder="Yes, your name" id="name" required>
+                        </div>
+                        <div>
+                            <h3>Email: </h3>
+                            <input type="email" name="email" placeholder="E-mail" id="email" required>
+                        </div>
+                        <div>
+                            <h3>CV:</h3>
+                        </div>
+
+                        <input type="file" name="cv" placeholder="" id="cv" required>
+                        <div> </div>
+                        <hr>
+                        <div>
+                            <button type="submit">Send</button> <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
+    <footer>
+        <!-- Footer -->
+        <div class="navTab">
+            <a href="./index.html" class="logo">NotAGames™ <span class="money">Incorporated</span></a>
+            <h2><span class="italic">No, we are not legaly registered, and yes, we do not pay taxes</span></h2>
+        </div>
+    </footer>
 </body>
 
 </html>

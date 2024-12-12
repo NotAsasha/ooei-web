@@ -127,6 +127,43 @@ main {
     transform: translate(-50%, -150%);
 
 }
+#notaLand {
+    height: 800px;
+}
+.applyBox {
+    margin-top: 50px;
+    padding: 50px;
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #C0E9EA;
+    border: #4b423c 2px solid;
+    width: auto;
+
+}
+
+.secLand h2 {}
+
+.secLand div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.applyBox div {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.applyBox button {
+    width: 50px;
+    height: 30px;
+}
 
 .hoverImageInBox:hover ul {
     transition: 0.5s ease-in-out;
@@ -149,6 +186,7 @@ hr {
     align-items: end;
     overflow: hidden;
 }
+
 .gallery .border {
     z-index: 1;
 }
@@ -157,25 +195,30 @@ hr {
     height: 100%;
     transition: margin-left 0.5s ease;
 }
+
 .gallery button {
     position: relative;
     align-items: center;
     width: 50px;
     height: 50px;
     z-index: 2;
-margin-left: 10px;
-margin-right: 10px;
-margin-bottom: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 70px;
 }
+
 #gal1 {
     margin-left: -3000px;
 }
+
 #gal2 {
     margin-left: 0px;
 }
+
 #gal3 {
     margin-left: 3000px;
 }
+
 .navTab {
     background-color: aliceblue;
     display: flex;
@@ -195,11 +238,13 @@ margin-bottom: 70px;
     text-decoration: none;
     font-size: 2em;
 }
+
 @media (max-width: 1205px) {
     .mainLand {
         height: 3500px;
     }
 }
+
 @media (max-width: 768px) {
     .navTab {
         flex-direction: column;
@@ -212,6 +257,7 @@ margin-bottom: 70px;
         font-size: 1.5em;
         /* Adjust font size */
     }
+
     body {
         margin-left: 0%;
         margin-right: 0%;
@@ -359,5 +405,5 @@ svg path {
 
 footer {
 
-    border-top:#4b423c solid;
+    border-top: #4b423c solid;
 }
