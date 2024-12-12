@@ -142,22 +142,40 @@ hr {
 }
 
 .gallery {
-    margin-top: 500px;
+    position: relative;
+    height: 700px;
     display: flex;
     justify-content: center;
-
+    align-items: end;
+    overflow: hidden;
 }
-
 .gallery .border {
-    width: 100%;
     z-index: 1;
 }
 
 .gallery img {
-    width: 80%;
+    height: 100%;
+    transition: margin-left 0.5s ease;
 }
-
-
+.gallery button {
+    position: relative;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+margin-left: 10px;
+margin-right: 10px;
+margin-bottom: 70px;
+}
+#gal1 {
+    margin-left: -3000px;
+}
+#gal2 {
+    margin-left: 0px;
+}
+#gal3 {
+    margin-left: 3000px;
+}
 .navTab {
     background-color: aliceblue;
     display: flex;
@@ -177,7 +195,11 @@ hr {
     text-decoration: none;
     font-size: 2em;
 }
-
+@media (max-width: 1205px) {
+    .mainLand {
+        height: 3500px;
+    }
+}
 @media (max-width: 768px) {
     .navTab {
         flex-direction: column;
@@ -189,6 +211,14 @@ hr {
     .navTab .logo {
         font-size: 1.5em;
         /* Adjust font size */
+    }
+    body {
+        margin-left: 0%;
+        margin-right: 0%;
+        border-left: 0px;
+        border-right: 0px;
+        border-radius: 0px;
+
     }
 }
 
@@ -203,15 +233,7 @@ hr {
         /* Further reduce font size */
     }
 
-    body {
-        margin-left: 0%;
-        margin-right: 0%;
-        border-left: 0px;
-        border-right: 0px;
-        border-radius: 0px;
 
-        /* overflow-x:hidden;  --- Класний дизайн, але багато проблем*/
-    }
 
 }
 
