@@ -36,7 +36,7 @@ main {
 
 .land h2 {
     text-align: center;
-    
+
 }
 
 .land h3 {
@@ -71,6 +71,7 @@ main {
     width: 500px;
     box-shadow: rgb(70, 70, 70) 1px 1px 30px;
 }
+
 .hoverImageInBox h2 a {
     position: absolute;
     top: 50%;
@@ -95,11 +96,13 @@ main {
     color: #C0E9EA;
     font-size: 50%;
 }
+
 .italic {
     font-style: italic;
     color: #C0E9EA;
     font-size: 70%;
 }
+
 .money {
     color: #31bd06;
 }
@@ -107,9 +110,11 @@ main {
 .hoverImageInBox img {
     filter: blur(0) brightness(90%);
 }
+
 .projList h2 {
     font-size: 200%;
 }
+
 .hoverImageInBox:hover img {
     transition: 0.5s ease-in-out;
     filter: blur(3px) brightness(40%);
@@ -197,16 +202,17 @@ hr {
         font-size: 1.2em;
         /* Further reduce font size */
     }
+
     body {
         margin-left: 0%;
         margin-right: 0%;
         border-left: 0px;
         border-right: 0px;
         border-radius: 0px;
-    
+
         /* overflow-x:hidden;  --- Класний дизайн, але багато проблем*/
     }
-    
+
 }
 
 .navTab ul {
@@ -259,6 +265,7 @@ svg path {
     stroke-dashoffset: 0;
 
 }
+
 #toDestroy {
     position: absolute;
     background-color: #22B14C;
@@ -268,11 +275,13 @@ svg path {
     transform: translate(-50%, -150%);
     height: 1000px;
 }
+
 #toDestroy h1 {
     margin-top: 200px;
 }
+
 .parralax {
-    height: 110vh;
+    height: 106vh;
     width: 100%;
     background-attachment: fixed;
     background-size: cover;
@@ -281,31 +290,38 @@ svg path {
     justify-content: center;
     scroll-snap-align: start;
 }
+
 .parralax:nth-child(1) {
-    
+
     background-image: url("./Background/ProjectPortal.png");
 }
+
 .parralax:nth-child(2) {
     background-image: url("./Background/lt.png");
 }
+
 .parralax:nth-child(3) {
-    background-image: url("./Background/Hill3.png");
+    background-image: url("./Background/ThatGameStory.png");
 }
+
 .content {
     color: green;
     text-align: center;
     padding: 55px;
 }
+
 .content h1 {
     margin-top: 150px;
     color: white;
     text-shadow: rgb(0, 0, 0) 2px 0 40px;
 }
+
 .content h2 {
     margin-top: 10px;
     color: #C0E9EA;
     text-shadow: rgb(0, 0, 0) 1px 1px 6px;
 }
+
 .content button {
     margin-top: 10px;
     width: 200px;
@@ -313,7 +329,13 @@ svg path {
     font-size: 150%;
     border: #C0E9EA 10px solid;
 }
+
 .content button:hover {
     background-color: #969696;
     transition: 0.5s ease-in-out;
+}
+
+footer {
+
+    border-top:#4b423c solid;
 }
